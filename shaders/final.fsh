@@ -8,7 +8,7 @@ void main() {
     // Sample the color
    vec3 Color = texture2D(colortex0, TexCoords).rgb; // 从纹理中获取颜色
    // Convert to grayscale
-   Color = vec3(dot(Color, vec3(0.333f))); // 灰度化
+   //Color = vec3(dot(Color, vec3(0.333f))); // 灰度化
    // Output the color
    gl_FragColor = vec4(Color, 1.0f); // 最终将颜色输出到gl_FragColor
 }
